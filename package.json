@@ -3,18 +3,37 @@
   "version": "1.0.0",
   "description": "[NodeJs Avançado com TDD, Clean Architecture e Typescript](https://www.udemy.com/course/nodejs-avancado)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucaswilliameufrasio/clean-node-advanced.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "NodeJS",
+    "Typescript",
+    "Clean Architecture",
+    "TDD",
+    "SOLID"
+  ],
+  "author": "Lucas William lucaswilliameufrasio@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lucaswilliameufrasio/clean-node-advanced/issues"
   },
-  "homepage": "https://github.com/lucaswilliameufrasio/clean-node-advanced#readme"
+  "engines": {
+    "node": "14.x"
+  },
+  "homepage": "https://github.com/lucaswilliameufrasio/clean-node-advanced#readme",
+  "scripts": {
+    "start": "node dist/main/api",
+    "build": "rimraf dist && tsc"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.3.3",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "rimraf": "^3.0.2"
+  }
 }
